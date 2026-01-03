@@ -81,6 +81,7 @@ await page.getByLabel('Email').fill("jp@gmail.com")
 
 await page.getByPlaceholder("Search store").fill("apple")
 
+// await page.locator()
 
 
 
