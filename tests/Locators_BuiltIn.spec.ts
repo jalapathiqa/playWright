@@ -37,7 +37,7 @@ Example Locator (with accessible name)
 */
 import{test, expect, Locator} from "@playwright/test"
 import { link } from "node:fs"
-test("default locators", async({page})=>{
+test("Built-In locators", async({page})=>{
 
     await page.goto("https://demo.nopcommerce.com/")
 
