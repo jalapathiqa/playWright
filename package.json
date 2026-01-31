@@ -7,7 +7,7 @@
     "test": "npx playwright test",
     "test:headed": "npx playwright test --headed",
     "test:debug": "npx playwright test --debug",
-    "tsc": "tsc -w" ,
+    "tsc": "tsc -w",
     "test:report": "npx playwright show-report",
     "testrunner": "npx playwright test tests/example.spec.ts"
   },
@@ -15,10 +15,9 @@
   "author": "",
   "license": "ISC",
   "type": "commonjs",
-  "devDependencies": 
-  {
+  "devDependencies": {
     "@playwright/test": "^1.57.0",
-    "@types/node": "^25.0.3",
+    "@types/node": "^25.1.0",
     "playwright": "^1.57.0",
     "typescript": "^5.9.3"
   }
