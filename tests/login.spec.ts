@@ -18,6 +18,7 @@ emailId.fill('pwtest@opencart.com');
     console.log("Home page title", title);
     await page.screenshot({path:'homepage.png'});
     expect(title).toBe('Account Login');
+    await new Promise(f=>setTimeout(f,5000));
     browser.close();
 
 
