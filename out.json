@@ -1,0 +1,158 @@
+﻿{
+  "config": {
+    "configFile": "C:\\Users\\kalag\\OneDrive\\Desktop\\playWright\\playwright.config.ts",
+    "rootDir": "C:/Users/kalag/OneDrive/Desktop/playWright",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/kalag/OneDrive/Desktop/playWright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/kalag/OneDrive/Desktop/playWright",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 90000
+      }
+    ],
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.57.0",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "tests\\DashBoardPO.spec.ts",
+      "file": "tests/DashBoardPO.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "DashBoard",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 12066,
+                  "error": {
+                    "message": "Error: locator.click: Error: strict mode violation: locator('.card-body').filter({ hasText: 'ZARA' }).locator('button') resolved to 2 elements:\n    1) <button tabindex=\"0\" _ngcontent-pls-c34=\"\" class=\"btn w-40 rounded\">ΓÇª</button> aka getByRole('button', { name: 'View' }).nth(1)\n    2) <button _ngcontent-pls-c34=\"\" class=\"btn w-10 rounded\">ΓÇª</button> aka getByRole('button', { name: '∩ü║ Add To Cart' }).nth(1)\n\nCall log:\n\u001b[2m  - waiting for locator('.card-body').filter({ hasText: 'ZARA' }).locator('button')\u001b[22m\n",
+                    "stack": "Error: locator.click: Error: strict mode violation: locator('.card-body').filter({ hasText: 'ZARA' }).locator('button') resolved to 2 elements:\n    1) <button tabindex=\"0\" _ngcontent-pls-c34=\"\" class=\"btn w-40 rounded\">ΓÇª</button> aka getByRole('button', { name: 'View' }).nth(1)\n    2) <button _ngcontent-pls-c34=\"\" class=\"btn w-10 rounded\">ΓÇª</button> aka getByRole('button', { name: '∩ü║ Add To Cart' }).nth(1)\n\nCall log:\n\u001b[2m  - waiting for locator('.card-body').filter({ hasText: 'ZARA' }).locator('button')\u001b[22m\n\n    at DashBoardPO.addToCart (C:\\Users\\kalag\\OneDrive\\Desktop\\playWright\\pageObjects\\DashBoardPO.js:37:66)\n    at C:\\Users\\kalag\\OneDrive\\Desktop\\playWright\\tests\\DashBoardPO.spec.ts:12:23",
+                    "location": {
+                      "file": "C:\\Users\\kalag\\OneDrive\\Desktop\\playWright\\pageObjects\\DashBoardPO.js",
+                      "column": 66,
+                      "line": 37
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39mpageObjects\\DashBoardPO.js:37\n\n\u001b[0m \u001b[90m 35 |\u001b[39m     \u001b[36masync\u001b[39m addToCart(productName) {\n \u001b[90m 36 |\u001b[39m         \u001b[36mconst\u001b[39m product \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m\".card-body\"\u001b[39m)\u001b[33m.\u001b[39mfilter({ hasText\u001b[33m:\u001b[39m productName })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 37 |\u001b[39m         \u001b[36mawait\u001b[39m product\u001b[33m.\u001b[39mlocator(\u001b[32m\"button\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"Add to cart\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 38 |\u001b[39m     }\n \u001b[90m 39 |\u001b[39m }\n \u001b[90m 40 |\u001b[39m module\u001b[33m.\u001b[39mexports \u001b[33m=\u001b[39m { \u001b[33mDashBoardPO\u001b[39m }\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\kalag\\OneDrive\\Desktop\\playWright\\pageObjects\\DashBoardPO.js",
+                        "column": 66,
+                        "line": 37
+                      },
+                      "message": "Error: locator.click: Error: strict mode violation: locator('.card-body').filter({ hasText: 'ZARA' }).locator('button') resolved to 2 elements:\n    1) <button tabindex=\"0\" _ngcontent-pls-c34=\"\" class=\"btn w-40 rounded\">ΓÇª</button> aka getByRole('button', { name: 'View' }).nth(1)\n    2) <button _ngcontent-pls-c34=\"\" class=\"btn w-10 rounded\">ΓÇª</button> aka getByRole('button', { name: '∩ü║ Add To Cart' }).nth(1)\n\nCall log:\n\u001b[2m  - waiting for locator('.card-body').filter({ hasText: 'ZARA' }).locator('button')\u001b[22m\n\n\n   at pageObjects\\DashBoardPO.js:37\n\n  35 |     async addToCart(productName) {\n  36 |         const product = this.page.locator(\".card-body\").filter({ hasText: productName });\n> 37 |         await product.locator(\"button\", { name: \"Add to cart\" }).click();\n     |                                                                  ^\n  38 |     }\n  39 | }\n  40 | module.exports = { DashBoardPO };\n    at DashBoardPO.addToCart (C:\\Users\\kalag\\OneDrive\\Desktop\\playWright\\pageObjects\\DashBoardPO.js:37:66)\n    at C:\\Users\\kalag\\OneDrive\\Desktop\\playWright\\tests\\DashBoardPO.spec.ts:12:23"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "[ \u001b[32m'ADIDAS ORIGINAL'\u001b[39m, \u001b[32m'ZARA COAT 3'\u001b[39m, \u001b[32m'iphone 13 pro'\u001b[39m ]\n"
+                    },
+                    {
+                      "text": "\u001b[33m3\u001b[39m\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-03-12T04:28:35.609Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\kalag\\OneDrive\\Desktop\\playWright\\test-results\\tests-DashBoardPO-DashBoard\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\kalag\\OneDrive\\Desktop\\playWright\\test-results\\tests-DashBoardPO-DashBoard\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\kalag\\OneDrive\\Desktop\\playWright\\test-results\\tests-DashBoardPO-DashBoard\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\kalag\\OneDrive\\Desktop\\playWright\\test-results\\tests-DashBoardPO-DashBoard\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\kalag\\OneDrive\\Desktop\\playWright\\pageObjects\\DashBoardPO.js",
+                    "column": 66,
+                    "line": 37
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "9db2f0de777a136bd9f3-fd0fe4c5d8f946cd6353",
+          "file": "tests/DashBoardPO.spec.ts",
+          "line": 5,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-03-12T04:28:34.194Z",
+    "duration": 15301.488000000001,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

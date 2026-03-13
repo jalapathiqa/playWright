@@ -1,4 +1,5 @@
-/*1. JavaScript HellWorld Program 
+/*
+1. JavaScript HellWorld Program 
 2. Declaring the Variables in JS 
 3. Understaning var, let, const keywirjds in JS
 4. Understanding the DataTypes in JS
@@ -267,6 +268,7 @@ let person1 = new Person("Kala", "giri", 4)console.log(person1.fullName())
 */
 
 console.log("************ Inheritance in JS ********** ")
+
 // itroduced from ES06 engine
 // Inheritance - when a child class acquires the properties and methods of the parent class, then it is called Inheritance. 
 //It is one of the most important concepts in Object Oriented Programming (OOP).
@@ -278,15 +280,15 @@ console.log("************ Inheritance in JS ********** ")
 //  The child class can also call the methods of the parent class using the super keyword.
 // Inheritance is a fundamental concept in Object Oriented Programming (OOP) and it is widely used in JavaScript to create reusable and maintainable code.
 
-const Person = require('./JS1')
+const Person = require('./JS1.spec.js')
 class Pet extends Person {
 
     get location() { return "Bluecross" }
     constructor(firstName, lastName, group) {
         //call parent class constructor
-        super(firstName, lastName, group)
+        super(firstName, lastName)
     }
 }
-let pet1 = new Pet('sam', 'Ram', 5)
+let pet1 = new Pet('sam', 'Ram')
 console.log(pet1.fullName())
 console.log(pet1.location)

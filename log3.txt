@@ -1,0 +1,48 @@
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] tests\DashBoardPO.spec.ts:5:5 › DashBoard
+[1A[2Ktests\DashBoardPO.spec.ts:5:5 › DashBoard
+[ [32m'ADIDAS ORIGINAL'[39m, [32m'ZARA COAT 3'[39m, [32m'iphone 13 pro'[39m ]
+
+[1A[2K[33m3[39m
+
+[1A[2K  1) tests\DashBoardPO.spec.ts:5:5 › DashBoard ─────────────────────────────────────────────────────
+
+    TypeError: Cannot read properties of undefined (reading 'click')
+
+       at pageObjects\DashBoardPO.js:10
+
+       8 |     }
+       9 |     async gotoMyOrders() {
+    > 10 |         await this.myOrders.click();
+         |                             ^
+      11 |     }
+      12 |
+      13 |     async getProductCount() {
+        at DashBoardPO.gotoMyOrders (C:\Users\kalag\OneDrive\Desktop\playWright\pageObjects\DashBoardPO.js:10:29)
+        at C:\Users\kalag\OneDrive\Desktop\playWright\tests\DashBoardPO.spec.ts:13:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\tests-DashBoardPO-DashBoard\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\tests-DashBoardPO-DashBoard\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\tests-DashBoardPO-DashBoard\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\tests-DashBoardPO-DashBoard\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\tests-DashBoardPO-DashBoard\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K  1 failed
+    tests\DashBoardPO.spec.ts:5:5 › DashBoard ──────────────────────────────────────────────────────
+
+[36m  Serving HTML report at http://localhost:52070. Press Ctrl+C to quit.[39m

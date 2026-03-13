@@ -11,7 +11,7 @@ test('file upload test', async()=>{ 
 await page.locator('input[name="file"]').setInputFiles("C:/Users/jkala10/Downloads/empty.docx");    
 await page.waitForTimeout(5000);
 
-    //MULTIPLE FILES  
+    //MULTIPLE FILES  	
   await page.locator('input[name="file"]').setInputFiles([ 
    path.join('C:/Users/jkala10/Downloads/empty.docx'),    
 	path.join('C:/Users/jkala10/Downloads/empty.docx')]);

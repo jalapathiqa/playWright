@@ -1,22 +1,24 @@
-   module.exports = class Person{
+module.exports = class Person {
     age = 25
     // location = "Canada"
 
     // properties 
-
-    get location()
-    {
+    get location() {
         return "Canada"
     }
 
-    constructor(firstName, lastName){ //firsName & lastName called instance variable
+    constructor(firstName, lastName, age) {
+        //firsName & lastName called instance variable
         this.firstName = firstName
         this.lastName = lastName
+        if (age !== undefined) {
+            this.age = age
+        }
     }
 
     //  methods
-    fullName(){
-        console.log(this.firstName+this.lastName)
+    fullName() {
+        return this.firstName + " " + this.lastName
     }
 
 }

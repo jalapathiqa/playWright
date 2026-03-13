@@ -5,6 +5,12 @@
     }}console.log ("************ Inheritance in JS ********** ") // itroduced from ES06 engine
 let pet1 = new Pet('sam', 'Ram')pet1.fullName()console.log(pet1.location)
 */console.log("************ Exercise - 1 : Calculate total expenses, highest and lowest expense from the given array of expenses using JavaScript. ********** ")
+
 const expenses = [120.5, 45.0, 89.99, 230.75, 15.25]
-const totalExpenses = expenses.reduce((sum, amount) => sum + amount, 0)const highestExpense = Math.max(...expenses)const lowestExpense = Math.min(...expenses)
-console.log("Expenses:", expenses)console.log("Total expenses:", totalExpenses)console.log("Highest expense:", highestExpense)console.log("Lowest expense:", lowestExpense)
+const totalExpenses = expenses.reduce((sum, amount) => sum + amount, 0)
+const highestExpense = Math.max(...expenses)
+const lowestExpense = Math.min(...expenses)
+console.log("Expenses:", expenses)
+console.log("Total expenses:", totalExpenses)
+console.log("Highest expense:", highestExpense)
+console.log("Lowest expense:", lowestExpense)

@@ -1,0 +1,6 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","53670","Validation test2","","2026-03-12","passed","2026-03-12","","validations.spec.ts","",""
+"","57743","Validation test5","","2026-03-12","passed","2026-03-12","","validations.spec.ts","",""
+"","62554","Validation test4","","2026-03-12","passed","2026-03-12","","validations.spec.ts","",""
+"","63000","Validation test1","","2026-03-12","passed","2026-03-12","","validations.spec.ts","",""
+"","63472","Validation test3","","2026-03-12","passed","2026-03-12","","validations.spec.ts","",""

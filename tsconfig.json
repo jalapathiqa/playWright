@@ -5,6 +5,8 @@
     "target": "ES6",
     "module": "commonjs",
     "types": ["node"],
+    "resolveJsonModule": true,
+    "esModuleInterop": true
       
   }
 }

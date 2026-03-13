@@ -35,9 +35,9 @@ Example Locator (with accessible name)
 
 
 */
-import{test, expect, Locator} from "@playwright/test"
+import { test, expect, Locator } from "@playwright/test"
 import { link } from "node:fs"
-test("Built-In locators", async({page})=>{
+test("@Web Built-In locators", async ({ page }) => {
 
     await page.goto("https://demo.nopcommerce.com/")
 
@@ -45,7 +45,7 @@ test("Built-In locators", async({page})=>{
     // identifies images (and similar elements) based on the alt attribute.
     // use this locator when your element supports alt text such as img and area elements.
 
-    const logo:Locator =  page.getByAltText("nopCommerce demo store")
+    const logo: Locator = page.getByAltText("nopCommerce demo store")
     await expect(logo).toBeVisible()
 
 
@@ -55,33 +55,33 @@ test("Built-In locators", async({page})=>{
     // Use this locator to find non interactive elements like div, span, p, etc.
     // For interctive elements like button, a, inut, etc. use role button.
 
-    const welcomeNote:Locator =  page.getByText("Welcome to our store") // full string
+    const welcomeNote: Locator = page.getByText("Welcome to our store") // full string
     await expect(welcomeNote).toBeEnabled()
 
     await expect(page.getByText("Welcome to")).toBeVisible() // sub string
 
     await expect(page.getByText(/Welcome\s+To\s+Our\s+Store/i)).toBeVisible() // regular expession start with / end with /
 
-//3. page.getByRole() - Locating by role - Interactive elements
-// Role locators include buttons, checkboxes, headings, links, lists, tables and many more and follow w3s specificators for 
+    //3. page.getByRole() - Locating by role - Interactive elements
+    // Role locators include buttons, checkboxes, headings, links, lists, tables and many more and follow w3s specificators for 
 
-await page.getByRole("link",{name:'Register'}).click();
-const headerRegister:Locator = page.getByRole("heading",{name:'Register'})
-// await expect(headerRegister).toBeVisible();
-// await expect(page.getByRole("heading",{name:'Register'})).toBeVisible();
+    await page.getByRole("link", { name: 'Register' }).click();
+    const headerRegister: Locator = page.getByRole("heading", { name: 'Register' })
+    // await expect(headerRegister).toBeVisible();
+    // await expect(page.getByRole("heading",{name:'Register'})).toBeVisible();
 
-await page.getByLabel("FirstName").fill("Jala")
-await page.getByLabel("LastName").fill("Kala")
-await page.getByLabel('Email').fill("jp@gmail.com")
+    await page.getByLabel("FirstName").fill("Jala")
+    await page.getByLabel("LastName").fill("Kala")
+    await page.getByLabel('Email').fill("jp@gmail.com")
 
 
-//4. page.getByPlaceholder()
-// Find an element with a given placeholder text
-// Best for inputs without a label but having a placeholder
+    //4. page.getByPlaceholder()
+    // Find an element with a given placeholder text
+    // Best for inputs without a label but having a placeholder
 
-await page.getByPlaceholder("Search store").fill("apple")
+    await page.getByPlaceholder("Search store").fill("apple")
 
-// await page.locator()
+    // await page.locator()
 
 
 

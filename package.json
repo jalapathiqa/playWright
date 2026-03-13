@@ -9,16 +9,23 @@
     "test:debug": "npx playwright test --debug",
     "tsc": "tsc -w",
     "test:report": "npx playwright show-report",
-    "testrunner": "npx playwright test tests/example.spec.ts"
+    "testrunner": "npx playwright test tests/example.spec.ts",
+    "allure:generate": "npx allure generate allure-results --clean",
+    "allure:open": "npx allure open allure-report"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
-    "@playwright/test": "^1.57.0",
+    "@playwright/test": "^1.58.2",
     "@types/node": "^25.1.0",
+    "allure-playwright": "^3.6.0",
     "playwright": "^1.57.0",
     "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0",
+    "allure-commandline": "^2.29.0"
   }
 }

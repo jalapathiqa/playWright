@@ -1,0 +1,54 @@
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] tests\DashBoardPO.spec.ts:5:5 › DashBoard
+[1A[2Ktests\DashBoardPO.spec.ts:5:5 › DashBoard
+[ [32m'ADIDAS ORIGINAL'[39m, [32m'ZARA COAT 3'[39m, [32m'iphone 13 pro'[39m ]
+
+[1A[2K[33m3[39m
+
+[1A[2K  1) tests\DashBoardPO.spec.ts:5:5 › DashBoard ─────────────────────────────────────────────────────
+
+    Error: locator.click: Error: strict mode violation: locator('.card-body').filter({ hasText: 'ZARA' }).locator('button') resolved to 2 elements:
+        1) <button tabindex="0" _ngcontent-sfu-c34="" class="btn w-40 rounded">…</button> aka getByRole('button', { name: 'View' }).nth(1)
+        2) <button _ngcontent-sfu-c34="" class="btn w-10 rounded">…</button> aka getByRole('button', { name: ' Add To Cart' }).nth(1)
+
+    Call log:
+    [2m  - waiting for locator('.card-body').filter({ hasText: 'ZARA' }).locator('button')[22m
+
+
+       at pageObjects\DashBoardPO.js:37
+
+      35 |     async addToCart(productName) {
+      36 |         const product = this.page.locator(".card-body").filter({ hasText: productName });
+    > 37 |         await product.locator("button", { name: "Add to cart" }).click();
+         |                                                                  ^
+      38 |     }
+      39 | }
+      40 | module.exports = { DashBoardPO };
+        at DashBoardPO.addToCart (C:\Users\kalag\OneDrive\Desktop\playWright\pageObjects\DashBoardPO.js:37:66)
+        at C:\Users\kalag\OneDrive\Desktop\playWright\tests\DashBoardPO.spec.ts:12:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\tests-DashBoardPO-DashBoard\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\tests-DashBoardPO-DashBoard\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\tests-DashBoardPO-DashBoard\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\tests-DashBoardPO-DashBoard\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\tests-DashBoardPO-DashBoard\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K  1 failed
+    tests\DashBoardPO.spec.ts:5:5 › DashBoard ──────────────────────────────────────────────────────
+
+[36m  Serving HTML report at http://localhost:59793. Press Ctrl+C to quit.[39m
