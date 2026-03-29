@@ -11,7 +11,8 @@
     "test:report": "npx playwright show-report",
     "testrunner": "npx playwright test tests/example.spec.ts",
     "allure:generate": "npx allure generate allure-results --clean",
-    "allure:open": "npx allure open allure-report"
+    "allure:open": "npx allure open allure-report",
+    "test:ci": "npx playwright test --reporter=html,line,allure-playwright"
   },
   "keywords": [],
   "author": "",
