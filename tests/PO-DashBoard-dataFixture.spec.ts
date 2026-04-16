@@ -1,3 +1,4 @@
+//Author: Jalapathi
 // import { test, expect } from '@playwright/test';
 import { POManager } from '../pageObjects/POManager';
 const { DashBoardCustomFixture } = require('../Utils/test-base');
@@ -31,6 +32,7 @@ DashBoardCustomFixture(`AdidasOriginal`, async ({ page, AdidasOriginal }) => {
     await dashBoardPO.getProductNames();
 
 })
+
 
 
 

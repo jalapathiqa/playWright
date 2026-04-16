@@ -1,3 +1,4 @@
+//Author: Jalapathi
 import{test,expect, Browser, Page} from '@playwright/test'
 import{webkit, chromium, firefox} from 'playwright';
 
@@ -25,3 +26,4 @@ emailId.fill('pwtest@opencart.com');
 
 
 })
+

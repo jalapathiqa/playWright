@@ -1,3 +1,4 @@
+//Author: Jalapathi
 import { Page, Locator } from '@playwright/test';
 
 export class Register {
@@ -26,3 +27,4 @@ export class Register {
   }
 
 }
+

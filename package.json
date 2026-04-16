@@ -19,6 +19,7 @@
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "@playwright/mcp": "^0.0.70",
     "@playwright/test": "^1.58.2",
     "@types/node": "^25.1.0",
     "allure-playwright": "^3.6.0",
@@ -26,7 +27,7 @@
     "typescript": "^5.9.3"
   },
   "dependencies": {
-    "exceljs": "^4.4.0",
-    "allure-commandline": "^2.29.0"
+    "allure-commandline": "^2.29.0",
+    "exceljs": "^4.4.0"
   }
 }

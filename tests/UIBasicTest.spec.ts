@@ -1,3 +1,4 @@
+//Author: Jalapathi
 import{test, expect}from'@playwright/test';
 import { chromium, Page, Browser, BrowserContext } from '@playwright/test';
 test('Basic UI validation', async()=>{
@@ -39,3 +40,4 @@ const productCount = await products.count();
  console.log(await products.count());
 console.log(await products.allTextContents());
 });
+

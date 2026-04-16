@@ -1,6 +1,7 @@
+//Author: Jalapathi
 import { test, expect, Browser, Page, BrowserContext, chromium } from '@playwright/test'
 
-test('windoes test', async () => {
+test('windows test', async () => {
 
     const context: BrowserContext = await chromium.launchPersistentContext('', { headless: false })
     const page: Page = await context.newPage();
