@@ -1,0 +1,56 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - alert [ref=e2]: Create Account | Bondar Academy
+  - generic [ref=e11]:
+    - link "Bondar Academy" [ref=e12] [cursor=pointer]:
+      - /url: /
+      - img "Bondar Academy" [ref=e14]
+    - generic [ref=e15]:
+      - generic [ref=e17]: Create your account
+      - generic [ref=e20]:
+        - group [ref=e21]:
+          - generic [ref=e22]: Full Name
+          - textbox "Full Name" [ref=e23]:
+            - /placeholder: John Doe
+            - text: "12"
+        - group [ref=e24]:
+          - generic [ref=e25]: Email
+          - textbox "Email" [active] [ref=e26]:
+            - /placeholder: m@example.com
+            - text: "12"
+        - group [ref=e27]:
+          - generic [ref=e28]: Password
+          - textbox "Password" [ref=e29]: HelloWorld
+          - generic [ref=e30]:
+            - generic [ref=e31]:
+              - img [ref=e32]
+              - generic [ref=e34]: At least 8 characters
+            - generic [ref=e35]:
+              - img [ref=e36]
+              - generic [ref=e38]: One uppercase letter
+            - generic [ref=e39]:
+              - img [ref=e40]
+              - generic [ref=e42]: One lowercase letter
+            - generic [ref=e43]:
+              - img [ref=e44]
+              - generic [ref=e46]: One number
+            - generic [ref=e47]:
+              - img [ref=e48]
+              - generic [ref=e50]: One special character (!@#$%...)
+        - group [ref=e51]:
+          - generic [ref=e52]: Confirm Password
+          - textbox "Confirm Password" [ref=e53]: HelloWorld
+        - group [ref=e54]:
+          - button "Create Account" [ref=e55]
+        - generic [ref=e57]: Or continue with
+        - group [ref=e58]:
+          - button "Sign up with GitHub" [ref=e59]:
+            - img [ref=e60]
+            - text: Sign up with GitHub
+          - paragraph [ref=e62]:
+            - text: Already have an account?
+            - link "Sign in" [ref=e63] [cursor=pointer]:
+              - /url: /login
+```

@@ -1,0 +1,38 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e10]:
+    - link "Bondar Academy" [ref=e11] [cursor=pointer]:
+      - /url: /
+      - img "Bondar Academy" [ref=e13]
+    - generic [ref=e14]:
+      - generic [ref=e15]:
+        - generic [ref=e16]: Login to your account
+        - generic [ref=e17]: Enter your email below to login to your account
+      - generic [ref=e20]:
+        - generic [ref=e21]: Invalid email or password
+        - group [ref=e22]:
+          - generic [ref=e23]: Email
+          - textbox "Email" [ref=e24]:
+            - /placeholder: m@example.com
+            - text: abcd@gmail.com
+        - group [ref=e25]:
+          - generic [ref=e26]:
+            - generic [ref=e27]: Password
+            - link "Forgot your password?" [ref=e28] [cursor=pointer]:
+              - /url: /forgot-password
+          - textbox "Password" [ref=e29]: "1234567"
+        - group [ref=e30]:
+          - button "Login" [ref=e31]
+        - generic [ref=e33]: Or continue with
+        - group [ref=e34]:
+          - button "Login with GitHub" [ref=e35]:
+            - img [ref=e36]
+            - text: Login with GitHub
+          - paragraph [ref=e38]:
+            - text: Don't have an account?
+            - link "Sign up" [ref=e39] [cursor=pointer]:
+              - /url: /register
+  - alert [ref=e40]
+```

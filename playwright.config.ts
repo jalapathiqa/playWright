@@ -13,7 +13,7 @@ const config = ({
 
   use: {
     browserName: 'chromium',
-    // headless: false,
+    headless: false,
     viewport: { width: 1280, height: 720 },
     actionTimeout: 0,
     ignoreHTTPSErrors: true,
@@ -25,6 +25,21 @@ const config = ({
     //  args: ['--start-maximized']
     //}
   },
+
+  projects: [
+    {
+      name: 'setup',
+      testMatch: /auth.setup.ts/,
+    },
+    {
+      name: 'default',
+      dependencies: ['setup'],
+      use: {
+        ...devices['Desktop Chrome'],
+        storageState: 'playwright/.auth/user.json',
+      },
+    },
+  ],
 
 });
 module.exports = config;
