@@ -27,7 +27,7 @@ test('Data driven test', async () => {
    await page.getByLabel('Password').fill(`${data[2].password}`);
    await page.getByText('Login', { exact: true }).click();
    const errormsg = page.getByText('Invalid email or password')
-   await expect(errormsg).toContainText('Invalid email or password');
+   await expect(errormsg).toContainText('Invalid Email and password');
 
 
 });
